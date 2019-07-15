@@ -1,4 +1,10 @@
 .has-border {
-    // border: 20px solid;
-    // border-color: #bbd0a4;
+    border: 20px solid;
+    border-color: #bbd0a4;
+    box-shadow: 0 0px 18px rgba(0,0,0,.1);
+    // border: 20px solid #165dab;
+    @include media-breakpoint-down(sm) {
+        border: unset;
+        box-shadow:unset;
+    }
 }

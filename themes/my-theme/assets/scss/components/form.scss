@@ -1,98 +1,91 @@
-
-// navbar search
-.search-trigger {
+// navbar
+  .search-trigger {
     z-index: 999;
-	.btn-search {
-		i {
-			display: block;
-			font-size: 16px;
-			color: $black;
-			padding-right: 10px;
-			line-height: 25px;
-			&:hover {
-                color: $blue;
-                cursor:pointer;
-			}
-		}
-    }
-    
-}
-.site-search {
-	display: block;
-	width: 100%;
-	height: 100%;
+    .btn-search {
+      i {
+        display: block;
+        font-size: 16px;
+        color: $black;
+        padding-right: 10px;
+        line-height: 25px;
+        &:hover {
+          color: $blue;
+          cursor:pointer;
+        }
+      }
+    }   
+  }
+  .site-search {
+    display: block;
+    width: 100%;
+    height: 100%;
     background: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	opacity: 0;
-	transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s;
-    -webkit-transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s;
-    
-	.inner-search {
-		border: none;
-		width: 50%;
-		margin-top: 300px;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		display: block;
-		padding-top: 0;
-		opacity: 0;
-		transition: margin-top .5s, opacity .5s;
-		-webkit-transition: margin-top .5s, opacity .5s;
-		transform: translateX(-50%);
-		.search-field {
-			color:$blue;
-			background: none;
-			border: none;
-			border-bottom: 3px solid #121212;
-			font-size: 30px;
-            font-weight: 400;
-            font-family: 'Poppins', sans-serif;
-            padding: 6px 15px;
-            padding-bottom: 15px;
-			height: auto;
-			margin: 0;
-			outline: none !important;
-			display: block;
-			width: 100%;
-			box-sizing: border-box;
-			transition: all 0.15s linear;
-			-webkit-appearance: none;
-			-webkit-border-radius: 0px;
-            box-shadow: inset 0 0 0 transparent;
-            
-            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                color: #ddd;
-                opacity: 1; /* Firefox */
-            }
-            
-            &::-ms-input-placeholder { /* Internet Explorer 10-11 */
-                color: #ddd;
-            }
-            
-            &::-ms-input-placeholder { /* Microsoft Edge */
-                color: #ddd;
-            }
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s;
+    -webkit-transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s; 
+    .inner-search {
+      border: none;
+      width: 50%;
+      margin-top: 300px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      display: block;
+      padding-top: 0;
+      opacity: 0;
+      transition: margin-top .5s, opacity .5s;
+      -webkit-transition: margin-top .5s, opacity .5s;
+      transform: translateX(-50%);
+      .search-field {
+        color:$blue;
+        background: none;
+        border: none;
+        border-bottom: 3px solid #121212;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        padding: 6px 15px;
+        padding-bottom: 15px;
+        height: auto;
+        margin: 0;
+        outline: none !important;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        transition: all 0.15s linear;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        box-shadow: inset 0 0 0 transparent;      
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #ddd;
+          opacity: 1; /* Firefox */
+        }     
+        &::-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: #ddd;
+        }      
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: #ddd;
         }
-       
-        button.close {
-            opacity: 1;
-            color:#121212;
-        }
-	}
-}
-.site-search.open {
-	z-index: 9999;
-	opacity: 1;
-	transition: opacity .5s, z-index 0s;
-	-webkit-transition: opacity .5s, z-index 0s;
-	.inner-search {
-		margin-top: -35px;
-		opacity: 1;
-		transition: margin-top .5s, opacity .5s;
-		-webkit-transition: margin-top .5s, opacity .5s;
-	}
-}
+      }   
+      button.close {
+        opacity: 1;
+        color:#121212;
+      }
+    }
+  }
+  .site-search.open {
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity .5s, z-index 0s;
+    -webkit-transition: opacity .5s, z-index 0s;
+    .inner-search {
+      margin-top: -35px;
+      opacity: 1;
+      transition: margin-top .5s, opacity .5s;
+      -webkit-transition: margin-top .5s, opacity .5s;
+    }
+  } 
