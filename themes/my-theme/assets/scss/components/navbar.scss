@@ -1,0 +1,161 @@
+.navbar-light{
+  .navbar-brand {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 38px;
+    font-weight: 800;
+    color:#121212;
+  }
+  @media (min-width: 768px) {
+    .navbar-brand.abs{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 0;
+    }
+  }
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        color:#121212;
+        font-size: 14px;
+        .nav-search{
+          margin: 50px 100px;
+          display: inline-block;
+          position: relative;
+          height: 60px;
+          float: right;
+          padding: 0;
+          position: relative;
+          
+        }
+      }  
+    }
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 4px;
+  padding: 7px 20px;
+  color: #FFF;
+  background: #67B5D1;    
+}
+.menu-button:hover {
+  background: #3184A1;
+  cursor: pointer;
+}
+.menu-wrap {
+  background-color: #111;
+  padding: 40px 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: fixed;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  bottom: 0;
+  z-index: 999;
+}
+.menu-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 900;
+}
+.menu-close {
+  background: url(http://i.imgur.com/iHYRssG.png) no-repeat scroll center center transparent;
+  opacity: 0;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  top: 0;
+  text-indent: -9999px;
+  transition: all 0.3s;
+}
+.menu-close:hover {
+  background-color: rgba(236, 69, 69, 1);
+  cursor: pointer;
+}
+.menu-wrap:hover .menu-close {
+  opacity: 1;
+}
+.menu-toggle {
+  display: none;
+}
+.menu-toggle:checked + .menu-wrap {
+  right: 0;
+}
+.menu-toggle:checked ~ .menu-overlay {
+  display: block;
+}
+.menu-title {
+  color: #FFF;
+  padding-left: 40px;
+  font-weight: 300;
+}
+.menu-list {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: inherit;
+  display: block;
+  overflow: hidden;
+}
+.menu-wrap:hover .menu-list {
+  overflow-y: auto;
+}
+.menu-list ul {
+  list-style-type: none;
+}
+.menu-list li {
+  display: block;
+}
+.menu-list li:first-child {
+  border-top: medium none;
+}
+.menu-list li a {
+  display: block;
+  padding: 10px 40px;
+  font-size: 18px;    
+  color: #FFF;
+  text-decoration: none;
+}
+.menu-list li a:hover {
+  background: #359BED;
+}
+.menu-list li a:active {
+  background: #666;
+}
+.hamburger-menu{
+  position: fixed;
+    top: 35px;
+    right: 15px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.25s ease;
+    span{
+      background: #e87d28;
+      border: none;
+      height: 2px;
+      border-radius: 2px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.35s ease;
+      cursor: pointer;
+    }
+    span &:nth-of-type(2){
+      top: 8px;
+    }
+  }

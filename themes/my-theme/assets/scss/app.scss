@@ -1,0 +1,20 @@
+//
+// Load all required stylesheets
+//
+
+@import '_all';
+
+//
+// Your app styles
+//
+
+body {
+    padding-top: 56px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    @include media-breakpoint-down(sm) {
+        padding-top: 35px;
+    }
+}
+ 

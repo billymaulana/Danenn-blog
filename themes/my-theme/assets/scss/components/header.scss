@@ -1,0 +1,51 @@
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 15px;
+    @include media-breakpoint-down(md) {
+        padding-top: 0px;
+    }
+    .navbar-brand {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 38px;
+        font-weight: 800;
+        color:$black;
+    }
+    .nav-link{
+        color:$black;
+        font-size: 16px;
+    }
+}
+
+.navbar-nav{
+    .nav-item{
+        .nav-link{
+            font-family: 'Poppins', sans-serif;
+            color:$black;
+            font-weight: 500;
+            font-size:14px;
+            line-height: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-right: 2rem;
+            @include media-breakpoint-down(md) {
+                padding-right: 1rem;
+            }
+        }
+    }
+    .dropdown{
+        .dropdown-toggle{
+            i{
+                font-size: 10px;
+            }
+            &:after{
+                display:none;
+            }
+        }
+        .dropdown-menu{
+            border-radius: 0;
+            border: 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    }
+}
