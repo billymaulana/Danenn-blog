@@ -1,7 +1,4 @@
 .blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
-    padding-top: 15px;
     @include media-breakpoint-down(md) {
         padding-top: 0px;
     }
@@ -15,6 +12,11 @@
         color:$black;
         font-size: 16px;
     }
+}
+
+.nav-separator{
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 16px;
 }
 
 .navbar-nav{

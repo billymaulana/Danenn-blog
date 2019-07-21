@@ -18,12 +18,13 @@ security = "all"
         <![endif]-->
     </head>
     <body class="has-border">
+        <div id="wrapper">
         {% partial 'header' %}
 
         {% page %}
 
         {% partial 'footer' %}
-
+           
         <script src="{{ [
             '@jquery',
             '@framework',
@@ -44,6 +45,8 @@ security = "all"
             'vendor/bootstrap/js/dist/popover.js',
 
             'vendor/fastclick/lib/fastclick.js',
+            'vendor/owl.carousel/dist/owl.carousel.min.js',
+            'vendor/owl.carousel/dist/owl.carousel.js',
 
             'assets/js/app.js']|theme }}"></script>
 
@@ -54,6 +57,6 @@ security = "all"
         {% partial 'tracker' %}
 
         {% partial 'flash' %}
-
+        </div>
     </body>
 </html>

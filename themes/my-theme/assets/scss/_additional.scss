@@ -1,10 +1,15 @@
-.has-border {
-    border: 20px solid;
-    border-color: #bbd0a4;
-    box-shadow: 0 0px 18px rgba(0,0,0,.1);
-    // border: 20px solid #165dab;
-    @include media-breakpoint-down(sm) {
+
+.has-border{
+    border: 20px solid #bbd0a4;
+    @include media-breakpoint-down(lg) {
         border: unset;
-        box-shadow:unset;
+    }
+}
+#wrapper {
+    overflow: hidden;
+    -webkit-box-shadow: 0 0px 18px rgba(0,0,0,.1);
+    box-shadow: 0 0px 18px rgba(0,0,0,.1);
+    @include media-breakpoint-down(sm) {
+        box-shadow: unset;
     }
 }
