@@ -1,0 +1,72 @@
+.card-category{
+    border:0;
+    height:230px;
+    border-radius:0;
+    background-size:cover;
+    .card-body{
+        &:before{
+            content: '';
+            position: absolute;
+            opacity: .5;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: -webkit-linear-gradient(left,transparent,#000);
+            background: -o-linear-gradient(left,transparent,#000);
+            background: -moz-linear-gradient(left,transparent,#000);
+            background: -webkit-gradient(linear,right top,right bottom,from(transparent),to(#000));
+            background: -webkit-linear-gradient(right,transparent,#000);
+            background: -o-linear-gradient(right,transparent,#000);
+            background: -webkit-gradient(linear,right top,left top,from(transparent),to(#000));
+            background: linear-gradient(to left,transparent,#000);
+            transition: all .15s linear;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            opacity: .6;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            border: 1px solid #fff;
+            transition: all .15s linear;
+        }
+        &:hover{
+            &:before{
+                opacity: 0;
+            }
+            &:after{
+                top: -5px;
+                bottom: -5px;
+                left: -5px;
+                right: -5px;
+            }
+        }
+        .card-title{
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            text-shadow: 1px 1px 0px rgba(0,0,0,.7);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 10px 18px;
+            position:relative;
+            &:after{
+                content: '';
+                background: #fff;
+                width: 20px;
+                height: 2px;
+                display: block;
+                top: auto;
+                left: 9px;
+                bottom: 3px;
+                position: absolute;
+                z-index: 1;
+                -webkit-box-shadow: 1px 1px 0px rgba(0,0,0,.7);
+                box-shadow: 1px 1px 0px rgba(0,0,0,.7);
+            }
+        }
+    }
+}

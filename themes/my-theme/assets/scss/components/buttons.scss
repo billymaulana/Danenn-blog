@@ -15,3 +15,11 @@
 .btn-outline-white {
     @include button-outline-variant(#fff, #000);
 }
+
+.btn-link{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#121212;
+}

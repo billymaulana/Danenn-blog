@@ -1,0 +1,22 @@
+.blog-post{
+    .cover-blog{
+        &:after{
+            content: '';
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            width: 50%;
+            height: 80%;
+            border: 12px solid #f2f2f2;
+            z-index: -1;
+            bottom: -22px;
+            left: -22px;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+        img{
+            object-fit:cover;
+        }
+    }
+}

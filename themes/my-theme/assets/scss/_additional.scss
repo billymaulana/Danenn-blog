@@ -13,3 +13,22 @@
         box-shadow: unset;
     }
 }
+
+.box-separator{
+    content: '';
+    display: inline-block;
+    background: #bbd0a4;
+    width: 4px;
+    height: 4px;
+}
+.horizon{
+    &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        background: #e5e5e5;
+        right: 0;
+    }
+}

@@ -2,6 +2,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
 }
 a{
+    font-family: 'Poppins', sans-serif;
     color:$black;
     &:hover{
         color: rgba(18, 18, 18, 0.8);
@@ -11,8 +12,58 @@ a{
 p{
     color:$black;
     margin-bottom:0;
+    
 }
 
 p,span,small{
     font-family: 'Noto Sans', sans-serif;
+}
+small{
+    letter-spacing: 1px;
+    color: #909090;
+    font-size: .786rem;
+}
+
+.text-category{
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: .786rem;
+    font-weight: 500;
+    line-height: 25px;
+    color: #c2c2c2;
+    position:relative;
+    &:after{
+        content: '';
+        width: 20px;
+        height: 2px;
+        display: block;
+        top: auto;
+        left: 0;
+        bottom: -1px;
+        position: absolute;
+        z-index: -1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        background-color: #bbd0a4;
+    }
+}
+.text-title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 36px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.text-content{
+    overflow: hidden;
+    color: #777;
+    font-size: 14px;
+    display: -webkit-box;
+    line-height: 1.8;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
