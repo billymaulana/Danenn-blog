@@ -1,6 +1,6 @@
 
 .has-border{
-    border: 20px solid #bbd0a4;
+    border: 20px solid $blue;
     @include media-breakpoint-down(lg) {
         border: unset;
     }
@@ -17,7 +17,7 @@
 .box-separator{
     content: '';
     display: inline-block;
-    background: #bbd0a4;
+    background: $blue;
     width: 4px;
     height: 4px;
 }

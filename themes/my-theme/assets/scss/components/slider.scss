@@ -9,7 +9,7 @@
         position: absolute;
         width: 420px;
         height: 420px;
-        border: 15px solid #bbd0a4;
+        border: 15px solid $blue;
         left: -35px;
         top: 40px;
         z-index:-1;
@@ -24,7 +24,7 @@
         position: absolute;
         width: 420px;
         height: 420px;
-        border: 15px solid #bbd0a4;
+        border: 15px solid $blue;
         z-index:-1;
         @include media-breakpoint-down(lg) {
             display:none;
@@ -118,7 +118,7 @@
                                         left: 0px;
                                         position: absolute;
                                         z-index: -1;
-                                        background-color: #bbd0a4;
+                                        background-color: $gold;
                                     }
                                 }
                                 .text-hero{
@@ -147,7 +147,7 @@
                                             left: -13px;
                                             bottom: 0;
                                             z-index: -1;
-                                            background-color: #bbd0a4;
+                                            background-color: $gold;
                                             @include media-breakpoint-down(sm) {
                                                 display:none;
                                             }
