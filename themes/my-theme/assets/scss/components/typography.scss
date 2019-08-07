@@ -64,6 +64,17 @@ small{
     margin-top: 10px;
 
 }
+.text-title2{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
 .text-content p{
     overflow: hidden;
     color: #777;
@@ -109,4 +120,39 @@ small{
             }
         }
     }
+}
+
+.readmore{
+    position:relative;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #121212;
+    border-color: #121212;
+    &:before{
+        left: -50px;
+        content: '';
+        height: 1px;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        background: #c2c2c2;
+    }
+    &:after{
+        right: -50px;
+        content: '';
+        height: 1px;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        background: #c2c2c2;
+    }
+}
+.text-gray{
+    color:$gray;
+}
+
+.f-12{
+    font-size:12px;
 }
