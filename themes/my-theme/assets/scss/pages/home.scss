@@ -50,37 +50,44 @@
             font-size: 14px;
         }
         .late-post-wrapper{
-            h4{
-                font-size: 12px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                .inner{
-                    background: #fff;
-                    position: relative;
-                    z-index: 1;
-                    &:before{
-                        content: '';
-                        position: absolute;
-                        width: 34px;
-                        height: 34px;
-                        top: 50%;
-                        left: -12px;
-                        margin-top: -18px;
-                        z-index: -1;
-                        border: 3px solid #f3f3f3;
-                    }
+            .post-sidebar{
+                h5{
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: none;
+                    letter-spacing: 0px;
+                    -ms-word-wrap: break-word;
+                    word-wrap: break-word;
+                }
+                .latepost-date{
+                    color: #c2c2c2;    
+                    font-size: .786rem;
+                    display: inline-block;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: .5px;
                     &:after{
-                        content: '';
-                        position: absolute;
-                        background: #121212;
-                        width: 20px;
-                        height: 2px;
-                        bottom: -5px;
-                        right: 0;
-                    }
+                        content:'';
+                        display: inline-block;
+                        background: $primary;
+                        width: 4px;
+                        height: 4px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 2px;
+                        letter-spacing: .5px;
+                    }            
+                }
+                a{
+                    color: $primary;
+                    font-size: 0.786rem;
+                    display: inline-block;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: 0.5px;
                 }
             }
         }
+        
     }
 }

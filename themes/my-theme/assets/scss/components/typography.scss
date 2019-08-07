@@ -51,7 +51,7 @@ small{
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
-        background-color: #bbd0a4;
+        background-color: $gold;
     }
 }
 .text-title{
@@ -64,7 +64,7 @@ small{
     margin-top: 10px;
 
 }
-.text-content{
+.text-content p{
     overflow: hidden;
     color: #777;
     font-size: 14px;
@@ -72,4 +72,41 @@ small{
     line-height: 1.8;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+}
+.text-black{
+    color:$black!important;
+}
+
+.box-title{
+    h4{
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        .inner{
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 34px;
+                height: 34px;
+                top: 50%;
+                left: -12px;
+                margin-top: -18px;
+                z-index: -1;
+                border: 3px solid #f3f3f3;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                background: #121212;
+                width: 20px;
+                height: 2px;
+                bottom: -5px;
+                right: 0;
+            }
+        }
+    }
 }

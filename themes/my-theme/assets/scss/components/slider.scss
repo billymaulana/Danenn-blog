@@ -51,6 +51,13 @@
                             bottom:20px; 
                             width: 350px;   
                         }
+                        @include media-breakpoint-down(sm) {
+                            position: absolute;
+                            top: unset;
+                            left: 20px;
+                            bottom: 10px;
+                            width: 250px;
+                        }
                         .shape{
                             position: relative;
                             background: #fff;
@@ -133,10 +140,11 @@
                                     -o-transition: all .3s ease-out;
                                     transition: all .3s ease-out;
                                     @include media-breakpoint-down(sm) {
-                                        font-size: 20px!important;
+                                        font-size: 14px!important;
                                         line-height: unset;
-                                        margin-top: unset;
+                                        margin-top: 10px;
                                     }
+
 
                                     .stabilo{
                                         &:after{
@@ -218,6 +226,9 @@
             background:transparent;
             outline: none;
           }
+        }
+        @include media-breakpoint-down(sm) {
+            display:none;
         }
     }
 }
