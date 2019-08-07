@@ -3,6 +3,9 @@
     height:230px;
     border-radius:0;
     background-size:cover;
+    @include media-breakpoint-down(sm) {
+        height: 130px;
+    }
     .card-body{
         &:before{
             content: '';

@@ -54,9 +54,12 @@
                         @include media-breakpoint-down(sm) {
                             position: absolute;
                             top: unset;
-                            left: 20px;
+                            left: 0;
+                            right: 0;
                             bottom: 10px;
-                            width: 250px;
+                            width: unset;
+                            margin: 0 auto;
+                            padding: 10px;
                         }
                         .shape{
                             position: relative;
