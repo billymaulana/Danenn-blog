@@ -40,6 +40,10 @@
       transition: margin-top .5s, opacity .5s;
       -webkit-transition: margin-top .5s, opacity .5s;
       transform: translateX(-50%);
+      @include media-breakpoint-down(sm) {
+        width:100%;
+        padding:0 3rem;
+      }
       .search-field {
         color:$blue;
         background: none;
@@ -89,3 +93,4 @@
       -webkit-transition: margin-top .5s, opacity .5s;
     }
   } 
+
