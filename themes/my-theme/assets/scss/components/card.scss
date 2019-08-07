@@ -70,3 +70,65 @@
         }
     }
 }
+.card-sidebar{
+    .card-body{
+        .img-sidebar{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }   
+        .post-order{
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: #121212;
+            background: #fff;
+            z-index: 5;
+            left: 55px;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+            -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.15);
+            box-shadow: 0 1px 5px rgba(0,0,0,.15);
+        }
+        .post-sidebar{
+            h5{
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: none;
+                letter-spacing: 0px;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+            }
+            .latepost-date{
+                color: #c2c2c2;    
+                font-size: .786rem;
+                display: inline-block;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: .5px;
+                &:after{
+                    content:'';
+                    display: inline-block;
+                    background: #e5e5e5;
+                    width: 4px;
+                    height: 4px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    letter-spacing: .5px;
+                }            
+            }
+            a{
+                color: #b7cba0;
+                font-size: 0.786rem;
+                display: inline-block;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
