@@ -50,7 +50,6 @@
         border: none;
         border-bottom: 3px solid #121212;
         font-size: 30px;
-        font-weight: 400;
         font-family: 'Poppins', sans-serif;
         padding: 6px 15px;
         padding-bottom: 15px;
@@ -73,6 +72,9 @@
         }      
         &::-ms-input-placeholder { /* Microsoft Edge */
           color: #ddd;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 14px;
         }
       }   
       button.close {
