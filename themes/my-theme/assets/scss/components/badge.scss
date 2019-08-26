@@ -1,0 +1,13 @@
+.badge-light{
+    font-size: .643em;
+    color: #9c9c9c;
+    padding: 8px 14px;
+    background: #f3f3f3;
+    letter-spacing: 1px;
+    border-radius: 0;
+    margin: 0 5px 10px;
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}

@@ -23,3 +23,16 @@
     letter-spacing: 2px;
     color:#121212;
 }
+.btn-dark{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    letter-spacing: 1px;
+    font-size: .8571em;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover{
+        background-color: $primary;
+        border-color: $primary;   
+    }
+}

@@ -15,6 +15,13 @@
             -o-transition: all .2s linear;
             transition: all .2s linear;
         }
+        @include media-breakpoint-down(md) {
+            &:after{
+                content: '';
+                display: none;
+            }
+        }
+
         img{
             object-fit:cover;
         }
@@ -32,6 +39,12 @@
                 z-index: -1;
                 bottom: -15px;
                 left: -15px;
+            }
+            @include media-breakpoint-down(md) {
+                &:after{
+                    content: '';
+                    display: none;
+                }
             }
             .img-author{
                 width:200px;
@@ -76,7 +89,13 @@
                         margin-right: 10px;
                         margin-bottom: 2px;
                         letter-spacing: .5px;
-                    }            
+                    }     
+                    @include media-breakpoint-down(md) {
+                        &:after{
+                            content: '';
+                            display: none;
+                        }
+                    }       
                 }
                 a{
                     color: $primary;
@@ -104,8 +123,18 @@
             bottom: -15px;
             left: -15px;
         }
+        @include media-breakpoint-down(md) {
+            &:after{
+                content: '';
+                display: none;
+            }
+        }
         img{
             object-fit:cover;
         }
     }
+}
+
+.subscribe{
+    padding: 100px 0;   
 }

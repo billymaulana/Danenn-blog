@@ -49,8 +49,16 @@ security = "all"
             'vendor/owl.carousel/dist/owl.carousel.js',
 
             'assets/js/app.js']|theme }}"></script>
-
-
+            <!-- <script>
+                $('.navbar-nav .dropdown-hover').hover(function() {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
+                    }, function() {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
+                });
+                $('.navbar-nav .dropdown > a').click(function(){
+                    location.href = this.href;
+                });
+            </script> -->
 
         {% scripts %}
 

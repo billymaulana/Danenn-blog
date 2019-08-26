@@ -1,16 +1,35 @@
 [viewBag]
 
 ==
-<footer>
-    <div class="container"></div>
-
-    <div class="footer-bottom">
-        <div class="container text-center">
-            <small>
-                Copyright {{ ''|date('Y') }}. All rights reserved. |
-                <a href="{{ 'static/terms-and-conditions'|page }}">Terms and Conditions</a> |
-                <a href="{{ 'static/privacy-policy'|page }}">Privacy Policy</a>
-            </small>
+<section class="subscribe bg-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="font-weight-bold f-24">Never Miss A Thing!</div>
+                <p class="text-gray mt-2 w-70 f-12 position-relative separator-subscribe">Subscribe to our newsletter and stay updated to our offers and deals!</p>
+            </div>
+            <div class="col-md-6">
+                <form action="">
+                    <div class="input-group subscribe-wrapper mb-3">
+                        <input type="email" class="form-control subscribe-input" placeholder="Your E-mail Address" aria-label="Your E-mail Address" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark rounded-0 px-4" type="button" id="button-addon2">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
+</section>
+<footer class="py-4 bg-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="f-12 ls-1 text-gray">
+                    Copyright © {{ ''|date('Y') }}. All rights reserved.
+                </div>
+            </div>
+        </div>
+
     </div>
 </footer>
