@@ -83,6 +83,29 @@ code = "main-menu"
         <img src="{{'assets/images/logo-2.png'|theme}}" class="img-fluid logo">
       </a>
     </div>
+    <div class="sidebar-menu-wrapper d-block d-md-none">
+      <nav class='sidebar-menu animated bounceInDown'>
+          <ul class="navbar-menu-sidebar">
+            <li ><a href="">Home</a></li>
+            <li><a href='#message'>Messages</a></li>
+            <li class='sub-menu'><a href='#message'>Article<div class='fas fa-caret-down right'></div></a>
+              <ul>
+                <li><a href="">Menu 1</a></li>
+                <li><a href="">Menu 2</a></li>
+                <li><a href="">Menu 3</a></li>
+              </ul>
+            </li>
+            <li class='sub-menu'><a href='#message'>Podcast<div class='fas fa-caret-down right'></div></a>
+              <ul>
+                <li><a href="">Menu 1</a></li>
+                <li><a href="">Menu 2</a></li>
+                <li><a href="">Menu 3</a></li>
+              </ul>
+            </li>
+            <li><a href='#message'>Contact</a></li>
+          </ul>
+        </nav>
+    </div>
     <div class="categories-wrapper box-title mt-5 pt-2">
       <h4 class="text-center mb-5">
         <span class="inner"> Categories </span>
@@ -149,6 +172,13 @@ $(document).ready(function () {
       $('.site-search').removeClass('open');
     }
   });
+});
+</script>
+<script>
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+	$(this).find(".right").toggleClass("fa-caret-down fa-caret-up");
 });
 </script>
 {% endput %}

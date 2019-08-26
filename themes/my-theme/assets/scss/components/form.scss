@@ -115,4 +115,10 @@
     top: 10px;
     left: -20px;
   }
+  @include media-breakpoint-down(md) {
+    &:after{
+      content: '';
+      display: none;
+    }
+  }
 }
