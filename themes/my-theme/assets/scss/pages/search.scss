@@ -1,0 +1,51 @@
+.search-result{
+    .box-result{
+        padding: 50px 125px 65px;
+        margin-bottom: 40px;
+        position: relative;
+        background: #383b4a;
+        h2{
+            position: relative;
+            color:$white;
+            font-size: 28px;
+            font-weight: 500;
+            text-transform: none;
+            letter-spacing: 0px;
+            &:after{
+                content: '';
+                background: $gold;
+                width: 40px;
+                height: 4px;
+                display: block;
+                left: -13px;
+                bottom: -13px;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+        p{
+            color:$white;
+            font-size: .857em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 700;
+            .result-numb{
+                font-weight: 700;
+                font-size: 1.214em;
+                letter-spacing: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.search-article{
+    .left-wrapper{
+        width:100%;
+        .left-img{
+            width: 250px;
+        }
+    }
+}

@@ -43,19 +43,19 @@ code = "main-menu"
   <nav class="navbar navbar-expand-md d-none d-md-flex navbar-light">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="{{'home'|page}}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="{{'about'|page}}">About</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="{{'articles'|page}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Articles
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Menu 1</a>
-          <a class="dropdown-item" href="#">Menu 2</a>
-          <a class="dropdown-item" href="#">Menu 3</a>
+          <a class="dropdown-item" href="{{'articles'|page}}">Menu 1</a>
+          <a class="dropdown-item" href="{{'articles'|page}}">Menu 2</a>
+          <a class="dropdown-item" href="{{'articles'|page}}">Menu 3</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -63,9 +63,9 @@ code = "main-menu"
           Podcast
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Menu 1</a>
-          <a class="dropdown-item" href="#">Menu 2</a>
-          <a class="dropdown-item" href="#">Menu 3</a>
+          <a class="dropdown-item" href="{{'podcast'|page}}">Menu 1</a>
+          <a class="dropdown-item" href="{{'podcast'|page}}">Menu 2</a>
+          <a class="dropdown-item" href="{{'podcast'|page}}">Menu 3</a>
         </div>
       </li>
       <li class="nav-item">
@@ -86,13 +86,13 @@ code = "main-menu"
     <div class="sidebar-menu-wrapper d-block d-md-none">
       <nav class='sidebar-menu animated bounceInDown'>
           <ul class="navbar-menu-sidebar">
-            <li ><a href="">Home</a></li>
-            <li><a href='#message'>Messages</a></li>
+            <li><a href="{{'home'|page}}">Home</a></li>
+            <li><a href="{{'about'|page}}">About</a></li>
             <li class='sub-menu'><a href='#message'>Article<div class='fas fa-caret-down right'></div></a>
               <ul>
-                <li><a href="">Menu 1</a></li>
-                <li><a href="">Menu 2</a></li>
-                <li><a href="">Menu 3</a></li>
+                <li><a href="{{'articles'|page}}">Menu 1</a></li>
+                <li><a href="{{'articles'|page}}">Menu 2</a></li>
+                <li><a href="{{'articles'|page}}">Menu 3</a></li>
               </ul>
             </li>
             <li class='sub-menu'><a href='#message'>Podcast<div class='fas fa-caret-down right'></div></a>
@@ -102,7 +102,7 @@ code = "main-menu"
                 <li><a href="">Menu 3</a></li>
               </ul>
             </li>
-            <li><a href='#message'>Contact</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </nav>
     </div>
@@ -113,13 +113,13 @@ code = "main-menu"
       <div>
         <ul class="menu-categories list-unstyled">
           <li>
-            <a href="" class="hover-border"> Islamic </a>
+            <a href="{{'articles'|page}}" class="hover-border"> Islamic </a>
           </li>
           <li>
-            <a href="" class="hover-border"> Travelling </a>
+            <a href="{{'articles'|page}}" class="hover-border"> Travelling </a>
           </li>
           <li>
-            <a href="" class="hover-border"> Food </a>
+            <a href="{{'articles'|page}}" class="hover-border"> Food </a>
           </li>
         </ul>  
       </div> 
@@ -129,9 +129,9 @@ code = "main-menu"
         <span class="inner"> Tags </span>
       </h4>  
       <div>
-        <a href=""><span class="badge badge-light">Islamic</span></a>
-        <a href=""><span class="badge badge-light">Motivation</span></a>
-        <a href=""><span class="badge badge-light">Food</span></a>
+        <a href="{{'articles'|page}}"><span class="badge badge-light">Islamic</span></a>
+        <a href="{{'articles'|page}}"><span class="badge badge-light">Motivation</span></a>
+        <a href="{{'articles'|page}}"><span class="badge badge-light">Food</span></a>
        
       </div> 
     </div>
